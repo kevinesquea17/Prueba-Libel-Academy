@@ -29,10 +29,9 @@ const SectionAction = () => {
         
     return (
         <section className='bg-[#131722] py-10'>
-            <div className='flex flex-col w-[80%] mx-auto'>
-                
-                <div className='flex w-full items-center gap-10'>
-                    <div className='w-[70%]'>
+            <div className='flex flex-col sm:w-[80%] w-[90%] mx-auto'>
+                <div className='flex flex-col-reverse sm:flex-row w-full items-center gap-10'>
+                    <div className='sm:w-[70%] w-full'>
                         <div className='flex space-x-2 text-xs items-center mb-10'>
                             <p className='text-primary font-semibold'>Today</p>
                             <span className='text-gray-400'>/</span>
@@ -66,7 +65,7 @@ const SectionAction = () => {
                             ))}
                         </Swiper>
                     </div>
-                    <div className='flex flex-col'>
+                    <div className='sm:w-[30%] w-full flex flex-col'>
                         <div className='w-10 h-[1px] bg-gray-600'></div>
                         <h2 className='mt-14 text-3xl text-white font-semibold'>Action & Drama Movies</h2>
                         <div className='flex items-center space-x-4 mt-6'>

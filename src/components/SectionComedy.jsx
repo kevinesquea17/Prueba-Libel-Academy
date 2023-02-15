@@ -28,11 +28,11 @@ const SectionComedy = () => {
 
     return (
         <section className='bg-[#0F131D] py-10'>
-            <div className='flex flex-col w-[80%] mx-auto'>
-                <div className='flex items-center gap-10 w-full'>
-                    <div className='w-[30%] flex flex-col'>
+            <div className='flex flex-col sm:w-[80%] w-[90%] mx-auto'>
+                <div className='flex sm:flex-row flex-col items-center gap-10 w-full'>
+                    <div className='sm:w-[30%] w-full flex flex-col'>
                         <div className='w-10 h-[1px] bg-gray-600'></div>
-                        <h2 className='mt-14 text-3xl text-white font-semibold'>Funniest Comedy Movies of 2018</h2>
+                        <h2 className='mt-14 text-3xl text-white font-semibold max-w-[70%] sm:max-w-full'>Funniest Comedy Movies of 2018</h2>
                         <div className='flex items-center space-x-4 mt-6'>
                             <div 
                                 className='w-10 h-10 rounded-full flex items-center justify-center border border-gray-600'
@@ -49,7 +49,7 @@ const SectionComedy = () => {
                         </div>
                         <div className='w-[90%] h-[1px] bg-gray-600 mt-[2.7rem]'></div>
                     </div>
-                    <div className='w-[70%]'>
+                    <div className='sm:w-[70%] w-full'>
                         <div className='flex space-x-2 text-xs items-center mb-10'>
                             <p className='text-primary font-semibold'>Today</p>
                             <span className='text-gray-400'>/</span>
