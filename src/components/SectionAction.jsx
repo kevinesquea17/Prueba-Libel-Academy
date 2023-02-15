@@ -24,8 +24,8 @@ const movies = [
 
 const SectionAction = () => {
 
-    const prevRef = useRef(null);
-    const nextRef = useRef(null);
+    const prevRefAct = useRef(null);
+    const nextRefAct = useRef(null);
         
     return (
         <section className='bg-[#131722] py-10'>
@@ -42,8 +42,8 @@ const SectionAction = () => {
                         <Swiper
 
                             onInit={(swiper) => {
-                                swiper.params.navigation.prevEl = prevRef.current;
-                                swiper.params.navigation.nextEl = nextRef.current;
+                                swiper.params.navigation.prevEl = prevRefAct.current;
+                                swiper.params.navigation.nextEl = nextRefAct.current;
                                 swiper.navigation.init();
                                 swiper.navigation.update();
                             }}
@@ -71,13 +71,13 @@ const SectionAction = () => {
                         <div className='flex items-center space-x-4 mt-6'>
                             <div 
                                 className='w-10 h-10 rounded-full flex items-center justify-center border border-gray-600'
-                                ref={prevRef}
+                                ref={prevRefAct}
                             >
                                 <MdKeyboardArrowLeft className='text-gray-600 text-xl' />
                             </div>
                             <div 
                                 className='w-10 h-10 rounded-full flex items-center justify-center border border-gray-600'
-                                ref={nextRef}
+                                ref={nextRefAct}
                             >
                                 <MdKeyboardArrowRight className='text-gray-600 text-xl' />
                             </div>
